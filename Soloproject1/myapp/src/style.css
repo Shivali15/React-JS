@@ -1,0 +1,111 @@
+* {
+  align-items: center;
+  box-sizing: border-box;
+}
+div {
+  text-align: center;
+}
+#root {
+  margin-left: 400px;
+  height: 100%;
+  width: 500px;
+  justify-content: center;
+  /* background-color: white; */
+  background-color: rgb(180, 6, 108);
+  border: 5px solid rgb(22, 24, 151);
+  border-radius: 15px;
+  box-shadow: 10em;
+}
+
+#interest-btn {
+  /* letter-spacing: 2em; */
+  margin-left: 15px;
+  text-align: left;
+}
+#about-btn {
+  margin-left: 15px;
+
+  /* letter-spacing: 2em; */
+  text-align: left;
+}
+#about-btn .about-para {
+  /* letter-spacing: 2em; */
+  text-align: left;
+}
+body {
+  margin: 0;
+  align-items: center;
+  font-family: Inter, sans-serif;
+  /* height: 100vh; */
+  /* background-color: #282d35; */
+  background-color: white;
+  color: white;
+}
+.nav--icon {
+  margin-top: 10px;
+  border: 2px solid white;
+  border-radius: 6px;
+  background-image: none;
+
+  height: 400px;
+  width: 400px;
+}
+
+#E-btn {
+  margin: 3px 3px;
+  border: 2px solid beige;
+  border-radius: 3px;
+
+  font-size: 20px;
+
+  font-weight: bold;
+}
+
+/* #E-btn > img {
+  height: 30px;
+  width: 30px;
+}
+#L-btn > img {
+  height: 30px;
+  width: 30px;
+} */
+#L-btn {
+  border: 2px solid beige;
+  background-color: rgb(96, 185, 226);
+  margin: 5px 5px;
+  border-radius: 3px;
+  color: white;
+
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.twitter--icon {
+  height: 50px;
+  margin: 10px 10px;
+  width: 80px;
+}
+.facebook--icon {
+  height: 50px;
+  margin: 10px 10px;
+
+  width: 80px;
+}
+.instagram--icon {
+  height: 50px;
+  margin: 10px 10px;
+  width: 80px;
+}
+.linkedin--icon {
+  height: 50px;
+  margin: 10px 10px;
+  width: 80px;
+}
+
+.mailpara {
+  align-items: center;
+}
+
+.linkedpara {
+  align-items: center;
+}
