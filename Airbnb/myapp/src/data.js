@@ -1,9 +1,13 @@
+// creating seperate data array in .js file
+
+
 export default [
+
   {
     id: 1,
     img: "./images/card1pic.jpg",
     rating: 5.0,
-    reviewCount: 6,
+    reviewcount: 6,
     country: "INDIA",
     title: "Life of lessons with Neeraj chopra",
     price: 136,
@@ -13,7 +17,7 @@ export default [
     id: 2,
     img: "./images/card2pic.jpg",
     rating: 4.5,
-    reviewCount: 7,
+    reviewcount: 7,
     country: "India",
     title: "Life of lessons with PV Sindhu",
     price: 90,
@@ -24,7 +28,7 @@ export default [
     id: 3,
     img: "./images/card3pic.jpg",
     rating: 5.6,
-    reviewCount: 10,
+    reviewcount: 10,
     country: "India",
     title: "Life of lessons with Bajrang Punia",
     price: 150,
@@ -33,7 +37,7 @@ export default [
   {
     img: "./images/card4pic.jpg",
     rating: 4.5,
-    reviewCount: 7,
+    reviewcount: 7,
     country: "India",
     title: "Life of lessons with Ravi Kumar",
     price: 90,
@@ -41,7 +45,7 @@ export default [
   {
     img: "./images/card1pic.jpg",
     rating: 5.6,
-    reviewCount: 10,
+    reviewcount: 10,
     country: "INDIA",
     title: "Life lessons with Neeraj chopra",
     price: 150,
@@ -49,7 +53,7 @@ export default [
   {
     img: "./images/card1pic.jpg",
     rating: 5.0,
-    reviewCount: 6,
+    reviewcount: 6,
     country: "INDIA",
     title: "Life lessons with Neeraj chopra",
     price: 136,
