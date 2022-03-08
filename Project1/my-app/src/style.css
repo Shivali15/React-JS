@@ -23,7 +23,7 @@ nav {
 }
 
 .nav--icon {
-  height: 30px;
+  height: 45px;
   margin-right: 7px;
 }
 
@@ -32,11 +32,6 @@ nav {
   color: #61dafb;
   font-weight: 700;
   font-size: 22px;
-}
-
-.nav--title {
-  color: #deebf8;
-  font-weight: 600;
 }
 
 main {
@@ -66,4 +61,55 @@ main {
 .main--facts > li::marker {
   font-size: 1.4rem;
   color: #61dafb;
+}
+.toggler {
+  display: flex;
+  align-items: center;
+}
+
+.toggler p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.toggler--slider {
+  width: 32px;
+  height: 18px;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+.toggler--light {
+  padding-right: 8px;
+  color: white;
+}
+
+nav.dark .toggler--light {
+  color: #918e9b;
+}
+
+.toggler--dark {
+  padding-left: 8px;
+  color: #918e9b;
+}
+
+nav.dark .toggler--dark {
+  /* when darkmode on dark word will white  */
+  color: white;
+}
+main.dark {
+  background-color: #282d35;
+  color: white;
+}
+
+main.light {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+body.light {
+  color: black;
 }

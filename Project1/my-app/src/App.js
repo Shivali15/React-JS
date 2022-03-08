@@ -10,11 +10,15 @@ import "./style.css"
 
 
 // Exporting App component
-export default function App(){
-    return (
-        <div className="container">
-            <Navbar />
-            <Main />
-        </div>
-    )
+export default function App() {
+  const [darkMode, setDarkMode] = React.useState(true);
+  function toggleDarkMode() {
+    setDarkMode((prevMode) => !prevMode);
+  }
+  return (
+    <div className="container">
+      <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <Main darkMode={darkMode} />
+    </div>
+  );
 }

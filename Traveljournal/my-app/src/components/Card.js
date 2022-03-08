@@ -3,18 +3,14 @@ import logo2 from "../images/locationlogo.jpg"
 import logo1 from "../images/mountpic.jpg"
 
 
-
-
-
-
 export default function Card(props)
 {
 return(
 
 <div className='card'>
   
-    <img src={logo1} alt="logo1" className='card--img' >
-    </img>
+    <img src={logo1} alt="logo1" className='card--img' />
+   
   
     <div className='card-status'>
       <img src={logo2}  alt="logo2"  className='card--locationlogo' ></img>
