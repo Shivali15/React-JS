@@ -13,9 +13,9 @@ return(
 
 <div className='card'>
   
-    <img src={logo1} alt="logo1" className='card--img'>
+    <img src={logo1} alt="logo1" className='card--img' >
     </img>
-
+  
     <div className='card-status'>
       <img src={logo2}  alt="logo2"  className='card--locationlogo' ></img>
   

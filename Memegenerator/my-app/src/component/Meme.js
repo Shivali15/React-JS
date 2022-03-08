@@ -5,18 +5,48 @@ import memesdata from '../memedata.js'
 
 export  default function Meme()
 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//create new state :
+const [meme , setmeme] =React.useState({
+  toptext:"",
+  bottomtext:"",
+  randomimage:"http://i.imgflip.com1bij.jpg"
+})
+// new state variable
+const [allmemeiamges , setallmemeimages]=React.useState(memesdata)
+
+
+ // creating state in react-js
+// const [memeimage, setmemeimage] = React.useState("http://i.imgflip.com1bij.jpg")
+
     let url
 
  function getmemeimage(){
-     const memearray=memesdata.data.memes
+     const memearray=allmemeiamges.data.memes
      const randomNumber = Math.floor(Math.random() * memearray.length)
       url =memearray[randomNumber].url
-     console.log(url)
+    // memearray[randomNumber].url
+
+    setmeme( prevmeme => ({
+      //all of theproperties of pervious meme
+      ...prevmeme,
+      randomimage:url
+    }))
  }
-
-
-
-
 
   return(
     <main>
@@ -41,6 +71,7 @@ export  default function Meme()
 
 
     </form>
+    <img src={meme.randomimage} className='meme--image'/>
     </main>
   )
 }
