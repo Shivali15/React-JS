@@ -12,14 +12,14 @@ const card=data.map(item =>{
     <Card 
     key={item.id}
 
-    img={item.img}
-    discription={item.discription}
-    startdate={item.startdate}
-    enddate={item.enddate}
-    location={item.location}
-    title={item.title}
-    gogglemapurl={item.googlemapsurl}
-    
+    // img={item.img}
+    // discription={item.discription}
+    // startdate={item.startdate}
+    // enddate={item.enddate}
+    // location={item.location}
+    // title={item.title}
+    // gogglemapurl={item.googlemapsurl}
+       item={item}
     />
 
   )
