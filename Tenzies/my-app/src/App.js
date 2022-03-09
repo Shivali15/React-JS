@@ -1,17 +1,19 @@
 import React from "react"
 import Die from "./components/Die"
+// using id from library of react : nanoid 
 import {nanoid}  from "nanoid"
 // import Confetti from "react-confetti";
 
 export default function App() {
 
  
- const [dice,setdie]=React.useState(allnewdie())
- const [tenzies,settenzies]=React.useState(false)
+ const [dice,setdie]=React.useState(allnewdie()) //state1
+ const [tenzies,settenzies]=React.useState(false) //state2
 
  //using useeffect
 
  React.useEffect(()=>{
+//.every method :look into specific condition if that condition is true then .every method return true 
      const allheld=dice.every(die=>die.isHeld)
      const firstvalue=dice[0].value
      const allsamevalue=dice.every(die=>die.value===firstvalue)
@@ -20,13 +22,14 @@ export default function App() {
         //  console.log("You won!")
      }
 
- },[]
+ },[dice]  //dice : newly start game return  allnewdie  again
  )
 
 
 
 function generatenewdie(){
     return{
+       // generating random numbers  
         value: Math.ceil(Math.random()*6) ,
                  isHeld:false,
                 id: nanoid()
@@ -66,9 +69,11 @@ function generatenewdie(){
 
 
 
-
-
+//components : function ,class
+// components are like JavaScript functions which accept arbitrary inputs 
+// (called “props”) and return React elements describing what should appear on the screen.
 function rolldice(){
+    //condition rendering
     if(!tenzies)
     { 
 
@@ -99,13 +104,15 @@ setdie(olddice =>olddice.map(die=>{
 
 
 
-
+//mappinng dice component
 const dielement=dice.map(die=>  
 (
+    //rendering  die component
+    //key : to give the elements a stable identity
 <Die key={die.id} value={die.value} isHeld={die.isHeld} holddice={()=>holddice(die.id)}/>
 ))
 
-
+// using JSX  markup + logic (js)
  return (
      <main>
          
@@ -117,6 +124,7 @@ const dielement=dice.map(die=>
         </div>
        <button
         className="roll-btn"
+        //handling events
         onClick={rolldice}
         >
             {tenzies ? "NewGame":"Roll"}
